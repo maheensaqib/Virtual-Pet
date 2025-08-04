@@ -1,5 +1,4 @@
 body {
-  /* background: rgb(251, 210, 210); */
   font-family: sans-serif;
   margin: 0;
   padding: 0;
@@ -16,7 +15,7 @@ body {
 .header {
   text-align: center;
   padding: 1rem;
-   -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-width: 0.3px;
   -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 
@@ -24,17 +23,17 @@ body {
   color: rgb(203, 82, 82);
   font-size: 2rem;
 }
+
 .main {
   display: grid;
   grid-template-columns: 1fr auto;
-  /* Pet Area in center, Text on right */
   height: auto;
   align-items: center;
   justify-items: center;
   gap: 2rem;
   padding: 1rem;
-  /* background-color: aquamarine; */
 }
+
 /* Pet Area Centered */
 .pet-area {
   display: flex;
@@ -56,15 +55,9 @@ body {
   z-index: 4;
   transition: transform 2s ease-in-out;
 }
-/* .namediv{
-display: flex;
-flex-direction: column;
-background-color: rgb(249, 234, 214);
-width: 2rem;
-height: 2rem;
-} */
- #catname{
-  background-color:  rgb(253, 253, 253);
+
+#catname {
+  background-color: rgb(253, 253, 253);
   color: rgb(0, 0, 0);
   /* opacity: 0; */
   z-index: 4;
@@ -77,14 +70,16 @@ height: 2rem;
   margin-left: 3rem;
   pointer-events: none;
   transition: transform 0.2s linear;
- }
+}
+
 /* Cat Animation */
-#catcontainer{
+#catcontainer {
   pointer-events: none;
   position: fixed;
   width: auto;
   height: auto;
 }
+
 lottie-player {
   opacity: 0;
   margin-top: 2rem;
@@ -96,7 +91,8 @@ lottie-player {
   animation: none;
   /* pointer-events: none; */
 }
-.helmet{
+
+.helmet {
   position: absolute;
   top: 10%;
   left: 28%;
@@ -106,12 +102,14 @@ lottie-player {
   pointer-events: none;
   opacity: 0;
 }
-.textarea{
+
+.textarea {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding-right: 1rem;
 }
+
 /* Text Box on Right Side */
 .textbox1 {
   background-color: rgb(249, 234, 214);
@@ -124,10 +122,12 @@ lottie-player {
   /* toggle with JS */
   align-self: center;
 }
+
 .text1 {
   overflow: auto;
 }
- .textbox2 {
+
+.textbox2 {
   opacity: 0;
   background-color: rgb(249, 234, 214);
   border-radius: 10px;
@@ -137,9 +137,10 @@ lottie-player {
   font-size: 1rem;
   /* display: block; */
   /* toggle with JS */
-  align-self:flex-end;
+  align-self: flex-end;
 }
-.text2{
+
+.text2 {
   background-color: rgb(249, 234, 214);
   color: rgb(173, 63, 63);
   /* border: none; */
@@ -147,8 +148,8 @@ lottie-player {
 
 }
 
-#btn2{
-  background-color:  rgb(173, 63, 63);
+#btn2 {
+  background-color: rgb(173, 63, 63);
   color: rgb(249, 234, 214);
   border: none;
   border-radius: 0.2rem;
@@ -157,10 +158,12 @@ lottie-player {
   cursor: pointer;
   transition: background-color 0.5s ease-in, width 0.5s ease-in;
 }
+
 #btn2:hover {
   background-color: rgb(173, 63, 63);
   width: 5rem;
 }
+
 .buttonarea {
   display: grid;
   align-items: center;
@@ -168,6 +171,7 @@ lottie-player {
   /* padding: 1rem; */
   /* background-color: aqua; */
 }
+
 /* Play Button */
 #btn {
   /* margin-top: 2rem; */
@@ -186,18 +190,23 @@ lottie-player {
   background-color: rgb(173, 63, 63);
   width: 8rem;
 }
+
 /* Cat Jump */
 .jump-once {
   animation: jump 0.5s ease-in-out;
 }
 
 #btn,
-.textbox1 , .textbox2, #catname{
+.textbox1,
+.textbox2,
+#catname {
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 #btn.hidden,
-.textbox1.hidden , .textbox2.hidden , #catname{
+.textbox1.hidden,
+.textbox2.hidden,
+#catname {
   opacity: 0;
   transform: translateY(2rem);
   /* for soft slide effect */
@@ -286,9 +295,10 @@ lottie-player {
 }
 
 @media (max-width: 786px) {
-  body{
+  body {
     background-size: auto;
   }
+
   .heading {
     font-size: 1.5rem;
   }
