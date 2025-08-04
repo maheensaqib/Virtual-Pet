@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat popup</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="heading">Virtual Pet</h1>
+        </header>
+
+        <div class="main">
+            <!-- Left: Cat & Basket -->
+            <div class="pet-area">
+                <p id="catname">Nora</p>
+                <img src="/assets/spaceship.png" class="basket" />
+                <div id="catcontainer">
+                    <img src="/assets/helmet-removebg-preview.png" class="helmet" />
+                    <lottie-player id="cat" src="cat 2.json" background="transparent" speed="1" loop
+                        autoplay></lottie-player>
+                </div>
+            </div>
+
+            <!-- Right: Occasional Message Box -->
+            <div class="textarea">
+                <div class="textbox1" id="box1">
+                    <p class="text1">Hi, Welcome to Virtual Pet<br />Press "PLAY" to start</p>
+                </div>
+                <div class="textbox2" id="box2">
+                    <form id="form1">
+                        <input type="text" class="text2">
+                        <button id="btn2" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="buttonarea">
+        <button id="btn" type="reset">PLAY</button>
+    </div>
+
+    <script src="lottie-player.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
